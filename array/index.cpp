@@ -9,7 +9,8 @@ int main()
     for (int i =0; i<size; i++)
     {
         largest=max(marks[i], largest);
+        if(marks[i]<largest)
+        cout<<i<<endl;
     }
-       cout << largest << endl; 
     return 0;
 }

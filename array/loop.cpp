@@ -4,13 +4,13 @@ using namespace std;
 int main()
 {
     int marks[5] = {99, 101, 89, 98, 93};
-      for (int i = 0; i < sizeof(marks) / sizeof(int); i++)
+    int smallest=marks[0];
+    for (int i =1; i < 5; i++)
     {
-        cout <<"Enter marks:";
-        cin >> marks[i]  ;
-    }
-    for (int i = 0; i < sizeof(marks) / sizeof(int); i++)
-    {
+        if(marks[i]<marks[0])
+        {
+            smallest=marks[i];
+        }
         cout << marks[i] << endl;
     }
     
