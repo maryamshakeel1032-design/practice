@@ -4,7 +4,10 @@ using namespace std;
 
     int main()
     {
-       vector<int> vec(5,1);
-       cout<<vec[0] << endl;
+       vector<char> vec={'a','b','1','v','m','b'};
+       for(char val:vec)
+       {
+        cout<<val<<endl;
+       }
         return 0;
     }
