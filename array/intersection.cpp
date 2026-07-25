@@ -4,10 +4,8 @@ void intersection(int arr[], int size, int com[],int sz)
 {
     for (int i = 0; i < size; i++)
     {
-        arr[i];
         for (int j = 0; j < sz; j++)
         {
-            com[j];
             if (arr[i]== com[j])
             {
                 cout << arr[i] << "  ";
