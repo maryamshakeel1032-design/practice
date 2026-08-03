@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-int majorityelement(vector<int> num)
+int majorityelement(vector<int>& num)
 { 
     for(int i=0;i<num.size();i++)
  {
