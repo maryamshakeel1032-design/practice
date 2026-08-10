@@ -10,11 +10,11 @@ int peakIndexInMountainArray(vector<int>& arr) {
             {
                 return mid;
             }
-            else if (arr[mid-1]<arr[mid]) //in incrreasing nad search in right side
+            else if (arr[mid-1]<arr[mid]) //in increasing nad search in right side
             {
                 st=mid+1;
             }
-            else end=mid-1;
+            else end=mid-1; //in decreasing nad search in left side
         }
          return -1;
     }
