@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-void sorting(vector<int>& nums)
+void sorting(vector<int>& nums) // o(n)
 {
     int n = nums.size();
     int low = 0, mid = 0, high = n - 1;
