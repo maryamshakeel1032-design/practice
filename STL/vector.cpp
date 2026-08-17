@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    vector<int> vec = {1, 2, 3, 4, 5};
+    vector<int> vec = {1, 2, 3, 4, 5};  //o(1) for push_back and pop _back,erase and insert o(n)
     // vec.erase(vec.begin()+2); //3 delete
     // vec.erase(vec.begin()); //1 delete
     // vec.erase(vec.begin()+1,vec.begin()+3); //2 and 3 delete start include but not end
