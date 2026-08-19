@@ -1,6 +1,4 @@
 #include <iostream>
-#include <string>
-#include <algorithm>
 using namespace std;
 bool ispalindrome(string str)
 {   int st=0,end=str.size()-1;
