@@ -3,7 +3,7 @@
 #include <set>
 #include <algorithm>
 using namespace std;
-vector<vector<int>> twoSum(vector<int> &nums)   //tc:o(n*n*n *logn(unique tripet)) ,sc:(o(unique tripet))
+vector<vector<int>> threeSum(vector<int> &nums)   //tc:o(n*n*n *logn(unique tripet)) ,sc:(o(unique tripet))
 {
     set<vector<int>> s;
     vector<vector<int>> ans;
@@ -31,7 +31,7 @@ vector<vector<int>> twoSum(vector<int> &nums)   //tc:o(n*n*n *logn(unique tripet
 int main()
 {
     vector<int> nums = {-1, 0, 1, 2, -1, -4};
-    vector<vector<int>> ans = twoSum(nums);
+    vector<vector<int>> ans = threeSum(nums);
     for (int i = 0; i < ans.size(); i++)
     {
         cout << endl;
