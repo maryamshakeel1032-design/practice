@@ -15,7 +15,6 @@ int main()
             {
                 cout <<(i+1);
             }
-        
         cout << endl;
     }
     return 0;

@@ -13,8 +13,6 @@ while(start<end )
     start++;
     end--;
   }
-   
-  
 }
 int main()
 {
