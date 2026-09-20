@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {   
-//    stack<pair<int,int>> s;
+//    stack<pair<int,int>> s;  //sc:o(2*n)
 //     MinStack() {
         
 //     }
@@ -34,7 +34,7 @@ int main()
 //     }
 
 
-stack<long long int> s;
+stack<long long int> s;   //sc:o(n)
 long long int minval;
     MinStack() {
         
