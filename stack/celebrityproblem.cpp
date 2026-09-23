@@ -2,7 +2,7 @@
 #include <vector>
 #include <stack>
 using namespace std;
-  int celebrity(vector<vector<int>> arr) { //tc:o(n) sc:o(1)
+  int celebrity(vector<vector<int>> arr) { //tc:o(n) sc:o(n)
          int n=arr.size();
         stack<int> s;
         for (int i=0;i<n;i++)
