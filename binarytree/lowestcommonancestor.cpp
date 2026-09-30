@@ -32,6 +32,7 @@ Node* lowestCommonAncestor(Node* root, Node* p, Node* q) { //tc:o(n) sc:o(n)
             return NULL;
         }
         if(root->data ==p->data || root->data==q->data)
+        // better if(rot==p || root==q)
         {
             return root;
         }
