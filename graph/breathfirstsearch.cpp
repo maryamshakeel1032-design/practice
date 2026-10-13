@@ -23,8 +23,8 @@ void bfs()
 {
  queue<int> q;
  vector<bool> vis(V,false);
- q.push(0);
- vis[0]=true;
+ q.push(6);
+ vis[6]=true;
  while(q.size()>0)
  {
    int u=q.front(); //u=source ,v=destination
@@ -44,12 +44,12 @@ void bfs()
 };
 int main()
 {
-    Graph g(5);
-    g.edge(0,1);
-    g.edge(1,2);
-    g.edge(1,3);
-    g.edge(2,3);
-    g.edge(2,4);
+    Graph g(10);
+    g.edge(6,5);
+    g.edge(5,7);
+    g.edge(7,8);
+    g.edge(7,9);
+    g.edge(8,9);
     g.bfs();
     return 0;
 }
