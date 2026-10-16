@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <list>
-#include <queue>
 using namespace std;
 class Graph
 {
@@ -19,7 +18,7 @@ public:
         l[u].push_back(v);
         l[v].push_back(u);
     }
-bool iscycledetect(int src,int par,vector<bool>& vis) // tc:o(V+E)
+bool iscyclebydfs(int src,int par,vector<bool>& vis) // tc:o(V+E)
 {
   vis[src]=true;
   list<int> neighbor=l[src];
@@ -27,12 +26,12 @@ bool iscycledetect(int src,int par,vector<bool>& vis) // tc:o(V+E)
   {
     if(!vis[v])
     {
-        if(iscycledetect(v,src,vis))
+        if(iscyclebydfs(v,src,vis))
         {
             return true;
         }
     }
-    else if (v!=par) //Back Edge
+    else if (v!=par) //Back Edge 
     {
        return true;
     }
@@ -46,7 +45,7 @@ bool iscycledetect(int src,int par,vector<bool>& vis) // tc:o(V+E)
      {
         if(!vis[i])
         {
-           if(iscycledetect(i,-1,vis))
+           if(iscyclebydfs(i,-1,vis))
            {
             return true;
            }
