@@ -15,7 +15,7 @@ class  Edge
     this->wt=wt;
  }
 };
-void dijkstra(int src,vector<vector<Edge>> g,int V)
+void dijkstra(int src,vector<vector<Edge>> g,int V) // tc:O((V+E).logv) => Vlogv+Elogv => Vlogv is smaller thus tc:O(Elogv)
 {
 vector<int> dis(V,INT_MAX);
 dis[src]=0;
