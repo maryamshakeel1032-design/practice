@@ -79,4 +79,5 @@ int main()
     graph.addEdge(4, 5);
     graph.addEdge(4, 1);
     cout << graph.articulationPoints() << endl;
+    return 0;
 }
