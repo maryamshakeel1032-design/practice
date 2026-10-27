@@ -63,7 +63,7 @@ public:
             }
         }
         // step 3:  DFS on Transpose graph   //o(V+E)
-        cout << "Print the SCC:"<<endl;;
+        cout << "Print the SCC:"<<endl;
         while (s.size() > 0)
         {
             int curr = s.top();
