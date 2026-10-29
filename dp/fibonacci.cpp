@@ -10,7 +10,7 @@ int fibo(int n) //tc:o(2^n)
     }
     return fibo(n-1)+fibo(n-2);
 }
-//fibonachi dp ->Memoization
+//fibonachi dp ->Memoization =>Risk of stack overflow thus Tabulation is better
 int fiboDP(int n,vector<int>& f)  //tc:o(n)
 {
     if(n<=1)
